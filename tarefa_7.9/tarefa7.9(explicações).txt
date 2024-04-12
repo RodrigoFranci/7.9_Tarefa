@@ -1,0 +1,15 @@
+const form = document.getElementById('principal');: Esta linha seleciona o elemento HTML com o id "principal" e o armazena na variável form.
+
+form.addEventListener('submit', function(e){ ... });: Isso adiciona um ouvinte de eventos ao formulário. Ele detecta quando o formulário é enviado (quando o botão de envio é clicado ou quando a tecla Enter é pressionada dentro de um campo de entrada) e executa a função de retorno de chamada.
+
+e.preventDefault();: Isso previne o comportamento padrão de envio do formulário, que é atualizar a página. Em vez disso, ele mantém a página estática e permite que o JavaScript processe os dados.
+
+let campo1A = document.getElementById('campoA'); e let campo2B = document.getElementById('campoB');: Essas linhas selecionam os elementos HTML com os ids "campoA" e "campoB" e os armazenam nas variáveis campo1A e campo2B, respectivamente.
+
+const valorCampo1A = campo1A.value; e const valorCampo2B = campo2B.value;: Essas linhas obtêm os valores dos campos de entrada e os armazenam nas constantes valorCampo1A e valorCampo2B.
+
+const mensagemSucesso = ...: Aqui, uma mensagem de sucesso é criada usando os valores dos campos de entrada.
+
+if(parseFloat(valorCampo2B) > parseFloat(valorCampo1A)){ ... } else { ... }: Este é um bloco condicional. Ele compara os valores dos campos de entrada convertidos em números flutuantes usando parseFloat(). Se o valor do campo B for maior que o valor do campo A, a mensagem de sucesso é exibida em um alerta e os campos de entrada são limpos. Caso contrário, uma mensagem de formulário inválido é exibida em um alerta.
+
+console.log(form);: Isso imprime o elemento do formulário no console do navegador para fins de depuração.
